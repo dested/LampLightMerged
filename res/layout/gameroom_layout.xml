@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/gameRoom"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="horizontal" xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<com.BigGamev1.Horiz android:layout_width="fill_parent"
+		android:id="@+id/horzView" android:layout_height="fill_parent">
+		<LinearLayout android:id="@+id/gameRoom"
+			android:layout_width="wrap_content" android:layout_height="fill_parent">
+			<!--RelativeLayout android:layout_width="200dip" android:id="@+id/GameList" 
+				android:layout_alignParentTop="true" android:layout_height="fill_parent"> 
+				<Button android:id="@+id/sudokuSend" android:layout_width="fill_parent" android:layout_alignParentTop="true" 
+				android:layout_height="wrap_content" android:text="Ready To Sudoku!"> </Button> 
+				<Button android:id="@+id/mazeSend" android:layout_width="fill_parent" android:layout_height="wrap_content" 
+				android:text="Ready To Maze!" android:layout_below="@id/sudokuSend"> </Button> 
+				<Button android:id="@+id/drawSend" android:layout_width="fill_parent" android:layout_height="wrap_content" 
+				android:text="Ready To Draw!" android:layout_below="@id/mazeSend"> </Button> 
+				<Button android:id="@+id/lampSend" android:layout_width="fill_parent" android:layout_height="wrap_content" 
+				android:text="Ready To Lamp!" android:layout_below="@id/drawSend"> </Button> 
+				</RelativeLayout -->
+			<GridView android:id="@+id/GridView01" android:layout_width="300dip"
+				android:layout_height="fill_parent" android:padding="10dp"
+				android:verticalSpacing="10dp" android:horizontalSpacing="10dp"
+				android:numColumns="auto_fit" android:columnWidth="60dp"
+				android:stretchMode="columnWidth" android:gravity="center">
+			</GridView>
+
+			<RelativeLayout android:layout_width="15dip"
+				android:id="@+id/Filler1" android:layout_alignRight="@id/GridView01"
+				android:layout_height="fill_parent"></RelativeLayout>
+			<RelativeLayout android:layout_width="510dip"
+				android:id="@+id/ChattingBox" android:layout_alignRight="@id/Filler1"
+				android:layout_height="fill_parent">
+				<ListView android:id="@+id/chatList" android:layout_width="fill_parent"
+					android:layout_height="220dip" android:layout_alignParentTop="true">
+				</ListView>
+				<EditText android:id="@+id/chatInput" android:layout_width="410dip"
+					android:layout_height="wrap_content" android:layout_below="@id/chatList">
+				</EditText>
+				<Button android:id="@+id/chatSend" android:layout_width="100dip"
+					android:layout_height="wrap_content" android:text="Send"
+					android:layout_below="@id/chatList"
+					android:layout_alignParentRight="true">
+				</Button>
+			</RelativeLayout>
+			<RelativeLayout android:layout_width="15dip"
+				android:id="@+id/Filler2" android:layout_alignRight="@id/ChattingBox"
+				android:layout_height="fill_parent"></RelativeLayout>
+			<ListView android:id="@+id/chatUserList"
+				android:layout_width="100dip" android:layout_height="fill_parent"
+				android:layout_alignRight="@id/Filler2">
+			</ListView>
+		</LinearLayout>
+	</com.BigGamev1.Horiz>
+</RelativeLayout> 

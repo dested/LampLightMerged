@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.LampLight" android:versionCode="1" android:versionName="1.0">
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<application android:icon="@drawable/icon" android:label="@string/app_name"
+		android:debuggable="true">
+		<activity android:name="StartingRoom"
+			android:screenOrientation="unspecified">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"></action>
+				<category android:name="android.intent.category.LAUNCHER"></category>
+			</intent-filter>
+		</activity>
+
+		<activity android:name="GameRoom" android:screenOrientation="unspecified"
+			android:theme="@android:style/Theme.NoTitleBar"></activity>
+
+		<!--activity android:label="@string/app_name" android:name="Grame" > </activity> 
+			<activity android:name="Sudoku" android:screenOrientation="unspecified" android:theme="@android:style/Theme.NoTitleBar"></activity> 
+			<activity android:name="Draw" android:theme="@android:style/Theme.NoTitleBar"> 
+			</activity -->
+		<service android:name="com.Service.MultiRunner"></service>
+		<activity android:theme="@android:style/Theme.NoTitleBar"
+			android:name="LampActivity"></activity>
+		<service android:name="LampService"></service>
+
+	</application>
+</manifest>

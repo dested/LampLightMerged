@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/startingRoom"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
+	<EditText android:id="@+id/userName" android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+	</EditText>
+	<TextView android:id="@+id/text" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="Please wait while connecting to server">
+	</TextView>
+	<Button android:id="@+id/button" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="Click Me To Login">
+	</Button>
+	<RelativeLayout android:id="@+id/widget58"
+		android:layout_width="wrap_content" android:layout_height="0px">
+	</RelativeLayout>
+	<TextView android:id="@+id/widg" android:layout_width="234px"
+		android:layout_height="wrap_content" android:text="Create New Account">
+	</TextView>
+	<RelativeLayout android:id="@+id/widget184"
+		android:layout_width="wrap_content" android:layout_height="wrap_content">
+		<Button android:id="@+id/createButton" android:layout_width="135px"
+			android:layout_height="136px" android:text="Create" android:textSize="30sp"
+			android:layout_alignParentTop="true" android:layout_toRightOf="@+id/createPassword">
+		</Button>
+		<EditText android:id="@+id/createUsername"
+			android:layout_width="200px" android:layout_height="73px"
+			android:text="username" android:textSize="18sp" android:layout_above="@+id/createPassword"
+			android:layout_alignParentLeft="true">
+		</EditText>
+		<EditText android:id="@+id/createPassword"
+			android:layout_width="200px" android:layout_height="73px"
+			android:text="password" android:textSize="18sp"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentLeft="true">
+		</EditText>
+	</RelativeLayout>
+</LinearLayout>
